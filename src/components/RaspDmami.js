@@ -31,7 +31,7 @@ function RaspDmami() {
   }
 
   const findChangeGroup = (value) => {
-    const group = data.find(d => d.group.title === value) || {}
+    const group = data.find(d => d.group.title === value) || {grid: ""}
     setChangeGroup(group)
   }
 
