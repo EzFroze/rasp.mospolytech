@@ -3,15 +3,12 @@ import classes from "./Tables.module.scss"
 import Table from "./Table/Table";
 import NotFoundGroup from "../NotFoundGroup/NotFoundGroup";
 
-function Tables({timeTable}) {
+function Tables({timeTable, error}) {
   return (
-    Object.keys(timeTable).length ?
-      (
-        <div className={classes.container}>
-          {Object.keys(timeTable).map(el => (<Table days={timeTable[el]} key={el} day={el}/>))}
-        </div>
-      )
-      : <NotFoundGroup />
+    <div className={classes.container}>
+      {Object.keys(timeTable).map(el => (<Table days={timeTable[el]} key={el} day={el}/>))}
+      {error ? <NotFoundGroup /> : null}
+    </div>
   )
 }
 
