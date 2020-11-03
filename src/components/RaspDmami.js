@@ -10,6 +10,7 @@ function RaspDmami() {
   const [changeGroup, setChangeGroup] = useState({
     grid: ""
   })
+  const [error, setError] = useState(false)
 
   useEffect(() => {
     getData()
@@ -32,6 +33,8 @@ function RaspDmami() {
 
   const findChangeGroup = (value) => {
     const group = data.find(d => d.group.title === value) || {grid: ""}
+    if (Object.keys(group).length === 1) setError(true)
+    else setError(false)
     setChangeGroup(group)
   }
 
@@ -39,7 +42,7 @@ function RaspDmami() {
     <div className={cls.content}>
       <h1>РАСПИСАНИЕ МОСКОВСКОГО ПОЛИТЕХА</h1>
       <Input handleEnter={handleEnter} />
-      <Tables timeTable={changeGroup.grid} />
+      <Tables timeTable={changeGroup.grid} error={error} />
     </div>
   )
 }
