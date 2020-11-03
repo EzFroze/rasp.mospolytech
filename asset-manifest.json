@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/rasp.mospolytech/static/css/main.f042c660.chunk.css",
+    "main.css": "/rasp.mospolytech/static/css/main.ffb688aa.chunk.css",
     "main.js": "/rasp.mospolytech/static/js/main.ea86062a.chunk.js",
     "main.js.map": "/rasp.mospolytech/static/js/main.ea86062a.chunk.js.map",
     "runtime-main.js": "/rasp.mospolytech/static/js/runtime-main.cd076534.js",
@@ -12,14 +12,14 @@
     "static/js/3.137c6e7f.chunk.js.map": "/rasp.mospolytech/static/js/3.137c6e7f.chunk.js.map",
     "index.html": "/rasp.mospolytech/index.html",
     "static/css/2.679831fc.chunk.css.map": "/rasp.mospolytech/static/css/2.679831fc.chunk.css.map",
-    "static/css/main.f042c660.chunk.css.map": "/rasp.mospolytech/static/css/main.f042c660.chunk.css.map",
+    "static/css/main.ffb688aa.chunk.css.map": "/rasp.mospolytech/static/css/main.ffb688aa.chunk.css.map",
     "static/js/2.e39c5ced.chunk.js.LICENSE.txt": "/rasp.mospolytech/static/js/2.e39c5ced.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.cd076534.js",
     "static/css/2.679831fc.chunk.css",
     "static/js/2.e39c5ced.chunk.js",
-    "static/css/main.f042c660.chunk.css",
+    "static/css/main.ffb688aa.chunk.css",
     "static/js/main.ea86062a.chunk.js"
   ]
 }
